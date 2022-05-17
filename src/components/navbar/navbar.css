@@ -1,0 +1,20 @@
+#nav-hdr {
+  text-align: center;
+}
+
+#nav-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 15px;
+}
+
+#btn-one,
+#btn-two,
+#btn-three {
+  color: black;
+  background-color: rgb(215, 135, 215);
+  height: 35px;
+  border: none;
+  border-radius: 25%;
+}
