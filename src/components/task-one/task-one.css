@@ -1,0 +1,27 @@
+#text-input-div {
+  text-align: center;
+  /* margin: auto;
+  width: 100%;
+  padding-top: 15px; */
+}
+
+/* #text-input {
+  margin: auto;
+} */
+
+#textbox {
+  box-sizing: content-box;
+  width: 300px;
+  height: 150px;
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+  font-size: 25px;
+  margin: auto;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+
+#reset-textbox-btn-div {
+  text-align: center;
+}
