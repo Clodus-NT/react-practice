@@ -1,20 +1,30 @@
-import {
-  React,
-  useState
-} from 'react';
+import React, { useState } from 'react';
 
 import './task-two.css';
 
 export default function TaskTwo() {
-  const [btn, setBtn] = useState('');
+  const [btnRedId, setBtnRedId] = useState('btn-red');
+  const [btnYellowId, setBtnYellowId] = useState('btn-yellow');
+
+  const swapRed = () => {
+    if (btnRedId === 'btn-red') {
+      setBtnRedId((btnRedId) => btnRedId === 'btn-yellow')
+    }
+  }
 
   return(
-    <container id="container-two">
+    <div id="container-two">
     <h2 id="hdr-two">Task Two</h2>
     <div id="two-btn-div">
-      <button id="red"></button>
-      <button id="yellow"></button>
+      <button 
+        id={btnRedId.toString()}
+        onClick={() => swapRed()}
+      >
+      </button>
+      <button 
+        id={btnYellowId.toString()}
+      ></button>
     </div>
-    </container>
+    </div>
   )
 }

@@ -14,16 +14,24 @@
   justify-content: space-around;
 }
 
-#red,
-#yellow {
+#btn-red,
+#btn-yellow {
   height: 200px;
   width: 200px;
 }
 
-#red {
+#btn-red {
   background-color: red;
 }
 
-#yellow {
+#btn-yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
   background-color: yellow;
 }

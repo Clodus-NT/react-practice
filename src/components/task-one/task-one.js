@@ -17,6 +17,7 @@ export default function TaskOne() {
         <input 
           id="text-input" 
           type="text"
+          placeholder='try typing something'
           onChange={(e) => setText(e.target.value)}>
         </input>
       </label>
