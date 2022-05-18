@@ -7,15 +7,15 @@ export default function TaskTwo() {
   const [btnYellowId, setBtnYellowId] = useState('btn-yellow');
 
   const swapColor = () => {
-    let nextRedId;
-    let nextYellowId;
-    if (btnRedId === 'btn-red' && btnYellowId === 'btn-yellow') {
+    let nextRedId, nextYellowId;
+
+    if (btnRedId === 'btn-red') {
       nextRedId = 'btn-yellow'
       nextYellowId = 'btn-red'
 
       setBtnRedId(nextRedId)
       setBtnYellowId(nextYellowId)
-    } else if (btnRedId === 'btn-yellow' && btnYellowId === 'btn-red') {
+    } else {
       nextRedId = 'btn-red'
       nextYellowId = 'btn-yellow'
 
@@ -30,12 +30,12 @@ export default function TaskTwo() {
     <div id="two-btn-div">
       <button 
         id={btnRedId.toString()}
-        onClick={() => swapColor()}
+        onClick={swapColor}
       >
       </button>
       <button 
         id={btnYellowId.toString()}
-        onClick={() => swapColor()}
+        onClick={swapColor}
       ></button>
     </div>
     </div>
