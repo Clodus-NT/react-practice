@@ -5,7 +5,6 @@ import TaskOne from '../task-one/task-one';
 import TaskTwo from '../task-two/task-two';
 import TaskThree from '../task-three/task-three';
 
-
 import './main-view.css';
 
 export default function MainView() {
@@ -23,12 +22,6 @@ export default function MainView() {
         <Route path="/three" element={<TaskThree/>}/>
       </Routes>
     </Router>
-    {/* <h1 id="main-view-header">Let's React</h1>
-    <button id="task-one-btn">Task 1</button>
-    <button id="task-two-btn">Task 2</button>
-    <button id="task-three-btn">Task 3</button>
-    <br></br>
-    <TaskOne /> */}
     </>
   )
 }

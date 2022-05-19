@@ -7,8 +7,6 @@ export default function TaskThree() {
   const [tileClass3, setTileClass3] = useState('');
   const [tileClass4, setTileClass4] = useState('');
 
-  const [isClass, setIsClass] = useState('dlt-self')
-
   const removeTile = () => {
     const nextClass = 'dlt-self';
    
@@ -26,7 +24,6 @@ export default function TaskThree() {
   const resetTiles = () => {
     const resetTileClass = '';
 
-
     if (
       tileClass1  === 'dlt-self'
       || tileClass2 === 'dlt-self'
@@ -38,15 +35,6 @@ export default function TaskThree() {
       setTileClass3(resetTileClass)
       setTileClass4(resetTileClass)
     }
-    // if (tileClass1  !== '') {
-    //   setTileClass1(resetTileClass)
-    // } else if (tileClass2 !== '') {
-    //   setTileClass2(resetTileClass)
-    // } else if (tileClass3 !== '') {
-    //   setTileClass3(resetTileClass)
-    // } else if (tileClass4 !== '') {
-    //   setTileClass4(resetTileClass)
-    // }
   }
 
   return(

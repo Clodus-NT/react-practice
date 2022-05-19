@@ -2,11 +2,9 @@ import {
   React,
   useState
 } from 'react';
-// import ReactDOM from 'react-dom';
 import './task-one.css';
 
 export default function TaskOne() {
-  // const [input, setInput] = useState('');
   const [text, setText] = useState('');
 
   return (

@@ -7,20 +7,15 @@ export default function TaskTwo() {
   const [btnYellowId, setBtnYellowId] = useState('btn-yellow');
 
   const swapColor = () => {
-    let nextRedId, nextYellowId;
+    const nextRedId = 'btn-yellow';
+    const nextYellowId = 'btn-red';
 
     if (btnRedId === 'btn-red') {
-      nextRedId = 'btn-yellow'
-      nextYellowId = 'btn-red'
-
       setBtnRedId(nextRedId)
       setBtnYellowId(nextYellowId)
     } else {
-      nextRedId = 'btn-red'
-      nextYellowId = 'btn-yellow'
-
-      setBtnRedId(nextRedId)
-      setBtnYellowId(nextYellowId)
+      setBtnRedId(nextYellowId)
+      setBtnYellowId(nextRedId)
     }
   }
 
